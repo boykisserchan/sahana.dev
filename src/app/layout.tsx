@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
+import {Analytics} from "@vercel/analytics/next";
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -25,6 +26,7 @@ export default function RootLayout({
       >
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
