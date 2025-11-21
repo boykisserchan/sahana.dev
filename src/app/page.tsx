@@ -1,15 +1,9 @@
 "use client";
 import Image from "next/image";
 import {useEffect, useState} from "react";
+import * as names from "./names.json"
 
 export default function Home() {
-	const names = [
-		"Sahana",
-		"a Web Developer",
-		"a hackathon organizer",
-		"a silly person :3",
-		"someone, somewhere."
-	];
 	const [index, setIndex] = useState(0);
 	const [slide, setSlide] = useState(true);
 
