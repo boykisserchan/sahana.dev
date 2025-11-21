@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={`${firaCode.className} antialiased`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
