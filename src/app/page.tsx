@@ -19,6 +19,11 @@ export default function Home() {
 		return () => clearInterval(interval);
 	}, []);
 
+	const commit = {
+		hash: process.env.NEXT_PUBLIC_GIT_HASH,
+		message: process.env.NEXT_PUBLIC_GIT_MESSAGE,
+	}
+
 	return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-5xl flex-col items-center justify-between py-16 px-0 bg-white dark:bg-black sm:items-start">
@@ -31,7 +36,7 @@ export default function Home() {
 				        {names[index]}
 			        </span>
 						</h1>
-		        <p className={"ml-auto text-xl font-light italic"}>goon goon goon goon goon</p>
+		        <a href={`https://github.com/boykisserchan/sahana.dev/commit/${commit.hash}`} className={"ml-auto text-md font-light italic underline self-end-safe"}>{commit.hash + " " + commit.message}</a>
 	        </div>
 	        <hr className={"border-t-2 border-white my-4 w-full"}/>
         </div>
