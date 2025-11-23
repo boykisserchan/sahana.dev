@@ -34,6 +34,10 @@ export default function Home() {
 				        slide ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
 			        }`}>
 				        {names[index]}
+				        {" "}
+				        <a href={"https://astracelestine.nekoweb.org/"} target={"_blank"}>
+					        :3
+				        </a>
 			        </span>
 						</h1>
 		        <a href={`https://github.com/boykisserchan/sahana.dev/commit/${commit.hash}`} className={"ml-auto text-md font-light italic underline self-end-safe"}>{commit.hash + " " + commit.message}</a>
