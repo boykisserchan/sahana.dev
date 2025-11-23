@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
+import {useEffect, useState} from "react";
+import * as names from "./names.json"
 
 export default function Home() {
 	const [index, setIndex] = useState(0);
@@ -43,6 +43,9 @@ export default function Home() {
 	        </div>
 	        <hr className={"border-t-2 border-white my-4 w-full"}/>
         </header>
+	      <article className="flex flex-col w-full">
+		      Hi! I&apos;m{" "} Shayaan, a web developer, hackathon organizer, and so much more!
+	      </article>
       </main>
     </div>
   );
