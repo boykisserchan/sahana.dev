@@ -29,7 +29,7 @@ export default function Home() {
       <main className="flex min-h-screen w-full max-w-5xl flex-col items-center justify-between py-16 px-0 bg-white dark:bg-black sm:items-start">
         <div className={"flex flex-col w-full"}>
 	        <div className={"flex flex-row w-full"}>
-		        <h1 className={"text-3xl font-black float-right"}>👋 Hi, I&apos;m{" "}
+		        <h1 className={"text-3xl font-black float-right"}>Hi, I&apos;m{" "}
 			        <span className={`inline-block transform transition-all duration-500 ease-in-out ${
 				        slide ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
 			        }`}>
