@@ -1,6 +1,7 @@
 "use client";
 import {useEffect, useState} from "react";
 import * as names from "./names.json"
+import Index from "../mdx/index.mdx"
 
 export default function Home() {
 	const [index, setIndex] = useState(0);
@@ -24,8 +25,8 @@ export default function Home() {
 	}
 
 	return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-5xl flex-col items-center justify-between py-16 px-0 bg-white dark:bg-black sm:items-start">
+    <div className={"flex min-h-screen items-center justify-center font-sans bg-black"}>
+      <main className={"flex min-h-screen w-full max-w-5xl flex-col items-center py-16 px-0 sm:items-start"}>
         <header className={"flex flex-col w-full"}>
 	        <div className={"flex flex-row w-full"}>
 		        <h1 className={"text-3xl font-black float-right"}>Hi, I&apos;m{" "}
@@ -43,8 +44,8 @@ export default function Home() {
 	        </div>
 	        <hr className={"border-t-2 border-white my-4 w-full"}/>
         </header>
-	      <article className="flex flex-col w-full">
-		      Hi! I&apos;m{" "} Shayaan, a web developer, hackathon organizer, and so much more!
+	      <article className={"flex flex-col w-full text-lg"}>
+		      <Index />
 	      </article>
       </main>
     </div>
